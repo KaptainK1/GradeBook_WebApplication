@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+   <link rel="stylesheet" href="resources/css/main.css"/>
+   <title>Welcome to MyGradeBook!</title>
+</head>
+
+   <body>
+      <f:view>
+         <h1>My Courses</h1>
+         <h:dataTable value="#{coursesBean.courses}" var="course"
+                      rowClasses="oddRows,evenRows" headerClass="header"
+                      styleClass="table" cellpadding="5" cellspacing="0">
+
+            <h:column>
+               <f:facet name="header">CourseID: </f:facet>
+               #{course.COURSEID}
+            </h:column>
+            <h:column>
+               <f:facet name="header">CourseNum: </f:facet>
+               #{course.COURSENUM}
+            </h:column>
+            <h:column>
+               <f:facet name="header">Course Name: </f:facet>
+               #{course.COURSENAME}
+            </h:column>
+            <!--<h:column>-->
+               <!--<f:facet name="header">Grade Model</f:facet>-->
+               <!--#{course.COURSEGRADEMODEL}-->
+            <!--</h:column>-->
+
+
+         </h:dataTable>
+      </f:view>
+   </body>
+</html>
