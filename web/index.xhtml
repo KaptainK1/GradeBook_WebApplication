@@ -19,7 +19,11 @@
 
             <h:column>
                <f:facet name="header">CourseID: </f:facet>
-               #{course.COURSEID}
+
+               <h:link value="#{course.COURSEID}" includeViewParams="true" outcome="resources/students/index.xhtml">
+                  <f:param name="courseID" value="#{course.COURSEID}" />
+               </h:link>
+
             </h:column>
             <h:column>
                <f:facet name="header">CourseNum: </f:facet>

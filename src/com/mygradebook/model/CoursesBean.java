@@ -5,6 +5,7 @@ package com.mygradebook.model;
 
 import com.hoffman.model.ConnectionManager;
 
+import javax.enterprise.context.RequestScoped;
 import javax.faces.view.ViewScoped;
 import javax.inject.Named;
 import javax.sql.rowset.CachedRowSet;
@@ -16,7 +17,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 @Named("coursesBean")
-@ViewScoped
+@RequestScoped
 public class CoursesBean implements Serializable {
 
     private int courseID;
