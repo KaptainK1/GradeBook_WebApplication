@@ -13,4 +13,13 @@
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.xhtml</url-pattern>
     </servlet-mapping>
+
+<!--    <servlet>-->
+<!--        <servlet-name>Student Servlet</servlet-name>-->
+<!--        <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>Student Servlet</servlet-name>-->
+<!--        <url-pattern>/students/.xhtml</url-pattern>-->
+<!--    </servlet-mapping>-->
 </web-app>

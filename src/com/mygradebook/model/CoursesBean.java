@@ -6,6 +6,7 @@ package com.mygradebook.model;
 import com.hoffman.model.ConnectionManager;
 
 import javax.enterprise.context.RequestScoped;
+import javax.faces.annotation.ManagedProperty;
 import javax.faces.view.ViewScoped;
 import javax.inject.Named;
 import javax.sql.rowset.CachedRowSet;
